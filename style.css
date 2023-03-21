@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    //background:  #fff ;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.5);
+}
+
+.container .left_Side{
+    position: relative;
+    padding: 40px;
+    background: rgba(242, 189, 153, 0.5);
+    
+    
+    z-index: 2;
+}
+.container .right_Side{
+    position: relative;
+    top: 25%;
+    padding:40px;
+    background: rgba(255, 255, 255, 0);
+   
+}
+.container .title_Side{
+    margin-top: 80px;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: rgba(232, 207, 193, 0.77);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(232, 207, 193, 0.3);
+    z-index: 1;
+}
+.title_Side h2{
+    font-family: 'Tenor Sans', sans-serif;
+    color: #523E27;
+    font-size: 58.9px;
+    margin-top: 1rem;
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+.title_Side h3{
+    color: #947047;
+    font-size: 28.8px;
+    font-family: 'Forum', cursive;
+    margin-top: 6rem;
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #B04E40;
+}
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.contactInfo ul li span a{
+    font-family: 'Forum', cursive;
+    font-size: 1em;
+    color: #523E27;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    font-family: 'Forum', cursive;
+    color:#523E27;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 18px;
+    font-size: 0.8em;
+    color: #523E27;
+}
+.contactInfo ul li span{
+    font-family: 'Forum', cursive;
+    color: #523E27;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+.contactInfo ul li a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5{
+    font-family: 'Forum', cursive;
+    color: #523E27;
+    font-weight: 400;
+}
+.contactInfo.education h4{
+    font-family: 'Forum', cursive;
+    color:  #947047;
+    font-weight: 400;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #523E27;
+}
+
+
+
+//***************left slide*****************//
+
+.right_Side{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.about{
+    margin-left: 1rem;
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #523E27;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Forum', cursive;
+}
+.about p{
+    font-family: 'Forum', cursive;
+    font-size: 18px;
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    margin: 5px;
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #947047;
+    font-weight: 400;
+    font-family: 'Forum', cursive;
+}
+.about .box .text{
+    padding-left: 10px;
+}
+.about .box .text h4{
+    font-family: 'Forum', cursive;
+    text-transform: uppercase;
+    color: #947047;
+    font-size: 16px;
+}
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    font-family: 'Forum', cursive;
+    text-transform: uppercase;
+    color:  #947047;
+    font-weight: 400;
+}
+.skills .box .percent{
+    position: relative;
+    width: 80%;
+    height: 10px;
+    background: #f0f0f0;
+
+}
+
+.skills .box .percent div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #523E27;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa-solid{
+    color: #523E27;
+    font-size: 14px;
+    width: 20px;
+    margin: 10px;
+}
+.intereses span{
+    font-family: 'Forum', cursive;
+    color: #947047;
+    padding-left: 10px;
+}
+
+
+/*
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }    
+}*/
+@media (max-width: 600px){
+    .container{
+        width: 100%;
+        min-height:100vh;
+    }
+    .container .left-Side{
+        width: 100%;
+        height: 100%;
+    }
+    .left_Side .imgBx{
+        display:none;
+    }
+
+    .container .title_Side{
+        position:relative;
+        margin: 0;
+        text-align: center;
+        padding:0;
+        width:100%;
+        height:100px;
+        top:0;
+    }
+    .container .title_Side h2{
+        position:relative;
+        margin:0;
+        padding:0;
+        font-size: 32px;
+    }
+    .container .title_Side h3{
+        position:relative;
+        font-size:16px;
+        margin:0;
+        padding:0;
+    }
+    .container .right_Side{
+        
+        top:0;
+        left:0;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+    }
+    .contactInfo {
+        text-align: center;
+        justify-content: center;
+    }
+    .about .box{
+        flex-direction: column;
+        
+    }
+    .about .box .year_company{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .interest ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+  
+
+/* Pantallas más pequeñas que 768px */
+@media screen and (max-width: 767px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+    }
+    
+    .container .left_Side {
+      padding: 20px;
+    }
+    
+    .container .right_Side {
+      top: auto;
+      padding: 20px;
+    }
+    
+    .title_Side h2 {
+      font-size: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .title_Side h3 {
+      font-size: 24px;
+      margin-top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Pantallas más grandes que 768px */
+  @media screen and (min-width: 768px) {
+    .container {
+      margin: 50px;
+    }
+    
+    .container .left_Side {
+      padding: 40px;
+    }
+    
+    .container .right_Side {
+      top: 25%;
+      padding: 40px;
+    }
+    
+    .title_Side h2 {
+      font-size: 58.9px;
+      left: 40%;
+      transform: translateX(-50%);
+    }
+    
+    .title_Side h3 {
+      font-size: 28.8px;
+      margin-top: 6rem;
+      left: 40%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+  /* Pantallas más pequeñas que 768px */
+@media screen and (max-width: 767px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+    }
+    
+    .container .left_Side {
+      padding: 20px;
+    }
+    
+    .container .right_Side {
+      top: auto;
+      padding: 20px;
+    }
+    
+    .title_Side h2 {
+      font-size: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .title_Side h3 {
+      font-size: 24px;
+      margin-top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Pantallas más grandes que 768px */
+  @media screen and (min-width: 768px) {
+    .container {
+      margin: 50px;
+    }
+    
+    .container .left_Side {
+      padding: 40px;
+    }
+    
+    .container .right_Side {
+      top: 25%;
+      padding: 40px;
+    }
+    
+    .title_Side h2 {
+      font-size: 58.9px;
+      left: 40%;
+      transform: translateX(10%);
+    }
+    
+    .title_Side h3 {
+      font-size: 28.8px;
+      margin-top: 6rem;
+      left: 40%;
+      transform: translateX(10%);
+    }
+  }
+  
+
+
+
+  @media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container .left_Side {
+    order: 2;
+  }
+  .container .right_Side {
+    order: 1;
+    top: 0;
+  }
+  .imgBx {
+    margin-top: 2rem;
+  }
+  .title_Side h2,
+  .title_Side h3 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
